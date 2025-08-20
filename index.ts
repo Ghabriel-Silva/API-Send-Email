@@ -6,7 +6,7 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors({ origin: "*" })); // depois coloque a URL do front-end
+app.use(cors({ origin: "https://ghabriel-silva.github.io/Portfolio/" })); 
 app.use(express.json());
 
 app.post("/send-email", async (req: Request, res: Response) => {
